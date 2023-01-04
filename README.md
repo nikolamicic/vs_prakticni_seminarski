@@ -10,12 +10,12 @@ Miodrag Todorović (100/2018) i projekat je rađen u okviru kursa Razvoj softver
 
 Primena alata će biti izvršena na master grani, nad komitom čiji je hash code sledeći: 9eb938b8d4c4fc2ecd2c22c9cae26c964d5371d8
 
-#Spisak korišćenih alata:
+# Spisak korišćenih alata:
   1. a
   2. b
   3. c 
   4. d
  
  
-#Spisak pronađenih bagova:
+# Spisak pronađenih bagova:
   1. a
