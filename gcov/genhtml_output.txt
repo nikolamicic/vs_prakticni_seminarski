@@ -1,0 +1,75 @@
+❯ genhtml -o report report.info
+Reading data file report.info
+Found 65 entries.
+Found common filename prefix "/Users/micko/Qt/5.15.2/clang_64/lib/QtCore.framework"
+Writing .css and .png files.
+Generating output.
+Processing file /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/type_traits
+Processing file /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/atomic
+Processing file Headers/qbasicatomic.h
+Processing file Headers/qalgorithms.h
+Processing file Headers/qlist.h
+Processing file Headers/qvarlengtharray.h
+Processing file Headers/qrefcount.h
+Processing file Headers/qscopedpointer.h
+Processing file Headers/qurl.h
+Processing file Headers/qmetatype.h
+Processing file Headers/qvariant.h
+Processing file Headers/qbytearray.h
+Processing file Headers/qobjectdefs_impl.h
+Processing file Headers/qrect.h
+Processing file Headers/qpoint.h
+Processing file Headers/qlogging.h
+Processing file Headers/qglobal.h
+Processing file Headers/qnamespace.h
+Processing file Headers/qiodevice.h
+Processing file Headers/qobject.h
+Processing file Headers/qmap.h
+Processing file Headers/qdir.h
+Processing file Headers/qatomic.h
+Processing file Headers/qflags.h
+Processing file Headers/qstringlist.h
+Processing file Headers/qvector.h
+Processing file Headers/qchar.h
+Processing file Headers/qfiledevice.h
+Processing file Headers/qstring.h
+Processing file Headers/qcoreevent.h
+Processing file Headers/qsize.h
+Processing file Headers/qobject_impl.h
+Processing file Headers/qarraydata.h
+Processing file Headers/qatomic_cxx11.h
+Processing file Headers/qdebug.h
+Processing file /Users/micko/Qt/5.15.2/clang_64/lib/QtGui.framework/Headers/qwindow.h
+Processing file /Users/micko/Qt/5.15.2/clang_64/lib/QtGui.framework/Headers/qicon.h
+Processing file /Users/micko/Qt/5.15.2/clang_64/lib/QtGui.framework/Headers/qevent.h
+Processing file /Users/micko/Qt/5.15.2/clang_64/lib/QtGui.framework/Headers/qcolor.h
+Processing file /Users/micko/Qt/5.15.2/clang_64/lib/QtGui.framework/Headers/qbrush.h
+Processing file /Users/micko/Qt/5.15.2/clang_64/lib/QtQml.framework/Headers/qqmldebug.h
+Processing file /Users/micko/Qt/5.15.2/clang_64/lib/QtQml.framework/Headers/qqml.h
+Processing file /Users/micko/Qt/5.15.2/clang_64/lib/QtQml.framework/Headers/qqmlprivate.h
+Processing file /Users/micko/Qt/5.15.2/clang_64/lib/QtQml.framework/Headers/qqmllist.h
+Processing file /Users/micko/Qt/5.15.2/clang_64/lib/QtWidgets.framework/Headers/qtreewidget.h
+Processing file /Users/micko/Qt/5.15.2/clang_64/lib/QtWidgets.framework/Headers/qsizepolicy.h
+Processing file /Users/micko/Qt/5.15.2/clang_64/lib/QtWidgets.framework/Headers/qmessagebox.h
+Processing file /Users/micko/Qt/5.15.2/clang_64/lib/QtWidgets.framework/Headers/qsystemtrayicon.h
+Processing file /Users/micko/Qt/5.15.2/clang_64/lib/QtWidgets.framework/Headers/qwidget.h
+Processing file /Users/micko/master_kursevi/verifikacija_softvera/prakticni_projekat/widgetci/build-Widgetci-Desktop_Qt_5_15_2_clang_64bit-Debug/moc_mainwindow.cpp
+Processing file /Users/micko/master_kursevi/verifikacija_softvera/prakticni_projekat/widgetci/build-Widgetci-Desktop_Qt_5_15_2_clang_64bit-Debug/moc_wqmlsystem.cpp
+Processing file /Users/micko/master_kursevi/verifikacija_softvera/prakticni_projekat/widgetci/build-Widgetci-Desktop_Qt_5_15_2_clang_64bit-Debug/moc_wwidget.cpp
+Processing file /Users/micko/master_kursevi/verifikacija_softvera/prakticni_projekat/widgetci/build-Widgetci-Desktop_Qt_5_15_2_clang_64bit-Debug/ui_mainwindow.h
+Processing file /Users/micko/master_kursevi/verifikacija_softvera/prakticni_projekat/widgetci/build-Widgetci-Desktop_Qt_5_15_2_clang_64bit-Debug/qrc_qtresource.cpp
+Processing file /Users/micko/master_kursevi/verifikacija_softvera/prakticni_projekat/widgetci/build-Widgetci-Desktop_Qt_5_15_2_clang_64bit-Debug/moc_wqmlfile.cpp
+Processing file /Users/micko/master_kursevi/verifikacija_softvera/prakticni_projekat/widgetci/widgetci/mainwindow.h
+Processing file /Users/micko/master_kursevi/verifikacija_softvera/prakticni_projekat/widgetci/widgetci/wqmlfile.cpp
+Processing file /Users/micko/master_kursevi/verifikacija_softvera/prakticni_projekat/widgetci/widgetci/mainwindow.cpp
+Processing file /Users/micko/master_kursevi/verifikacija_softvera/prakticni_projekat/widgetci/widgetci/wqmlsystem.cpp
+Processing file /Users/micko/master_kursevi/verifikacija_softvera/prakticni_projekat/widgetci/widgetci/wqmlsystem.h
+Processing file /Users/micko/master_kursevi/verifikacija_softvera/prakticni_projekat/widgetci/widgetci/wwidget.cpp
+Processing file /Users/micko/master_kursevi/verifikacija_softvera/prakticni_projekat/widgetci/widgetci/main.cpp
+Processing file /Users/micko/master_kursevi/verifikacija_softvera/prakticni_projekat/widgetci/widgetci/runguard.cpp
+Processing file /Users/micko/master_kursevi/verifikacija_softvera/prakticni_projekat/widgetci/widgetci/wqmlfile.h
+Processing file /Users/micko/master_kursevi/verifikacija_softvera/prakticni_projekat/widgetci/widgetci/wwidget.h
+Writing directory view page.
+Overall coverage rate:
+  lines......: 60.2% (1036 of 1721 lines)
+  functions..: 67.2% (583 of 868 functions)

@@ -1,0 +1,17 @@
+❯ lcov --capture --directory . --output-file report.info
+Capturing coverage data from .
+Found LLVM gcov version 12.0.0, which emulates gcov version 4.2.0
+Scanning . for .gcda files ...
+Found 11 data files in .
+Processing moc_wqmlfile.gcda
+Processing qrc_qtresource.gcda
+Processing wqmlsystem.gcda
+Processing wqmlfile.gcda
+Processing moc_mainwindow.gcda
+Processing moc_wqmlsystem.gcda
+Processing wwidget.gcda
+Processing main.gcda
+Processing mainwindow.gcda
+Processing moc_wwidget.gcda
+Processing runguard.gcda
+Finished .info-file creation
