@@ -3,18 +3,17 @@ U okviru ovog repozitorijuma će biti predstavljen praktični seminarski rad na 
 
 Seminarski rad je samostalnog tipa i svodi se na primenu alata za verifikaciju softvera na već postojeći projekat otvorenog koda.
 
-Projekat nad kojim će biti primenjeni alati se nalazi na github adresi: https://gitlab.com/matf-bg-ac-rs/course-rs/projects-2021-2022/22-Panzerkrieg
+Projekat nad kojim će biti primenjeni alati se nalazi na github adresi: https://github.com/eminfedar/widgetci
 
-Autori ovog projekta su moje kolege Jovan Marković (69/2018), Tamara Miković (82/2017), Sara Stanković (57/2018), Tina Mladenović (116/2018), 
-Miodrag Todorović (100/2018) i projekat je rađen u okviru kursa Razvoj softvera na osnovnim studijama Matematičkog fakulteta, smer informatika.
+Autor ovog projekta je Emin Fedar (github username: eminfedar).
 
-Primena alata će biti izvršena na master grani, nad komitom čiji je hash code sledeći: 9eb938b8d4c4fc2ecd2c22c9cae26c964d5371d8
+Primena alata će biti izvršena na master grani, nad komitom čiji je hash code sledeći: 05588c036cd4c6d6eddd5b595d027968ac484140
 
 # Spisak korišćenih alata:
-  1. a
-  2. b
-  3. c 
-  4. d
+  1. Clang-tidy i Clazy
+  2. Cppcheck
+  3. GCov
+  4. 
  
  
 # Spisak pronađenih bagova:
