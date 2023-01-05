@@ -1,0 +1,11 @@
+/Users/micko/master_kursevi/verifikacija_softvera/prakticni_projekat/widgetci/widgetci/wqmlfile.cpp:10:18: warning: Don't call QList::operator[]() on temporary [clazy-detaching-temporary]
+/Users/micko/master_kursevi/verifikacija_softvera/prakticni_projekat/widgetci/widgetci/wqmlfile.h:16:5: warning: getter wqmlfile::readFile possibly mismarked as a slot [clazy-const-signal-or-slot]
+/Users/micko/master_kursevi/verifikacija_softvera/prakticni_projekat/widgetci/widgetci/wqmlfile.h:17:5: warning: getter wqmlfile::saveFile possibly mismarked as a slot [clazy-const-signal-or-slot]
+/Users/micko/master_kursevi/verifikacija_softvera/prakticni_projekat/widgetci/widgetci/wqmlfile.h:19:5: warning: getter wqmlfile::readFileAnywhere possibly mismarked as a slot [clazy-const-signal-or-slot]
+/Users/micko/master_kursevi/verifikacija_softvera/prakticni_projekat/widgetci/widgetci/wqmlfile.h:20:5: warning: getter wqmlfile::saveFileAnywhere possibly mismarked as a slot [clazy-const-signal-or-slot]
+/Users/micko/master_kursevi/verifikacija_softvera/prakticni_projekat/widgetci/widgetci/mainwindow.cpp
+/Users/micko/master_kursevi/verifikacija_softvera/prakticni_projekat/widgetci/widgetci/wqmlfile.cpp
+/Users/micko/master_kursevi/verifikacija_softvera/prakticni_projekat/widgetci/widgetci/wqmlfile.h
+/Users/micko/master_kursevi/verifikacija_softvera/prakticni_projekat/widgetci/widgetci/wqmlsystem.cpp
+/Users/micko/master_kursevi/verifikacija_softvera/prakticni_projekat/widgetci/widgetci/wqmlsystem.h
+/Users/micko/master_kursevi/verifikacija_softvera/prakticni_projekat/widgetci/widgetci/wwidget.cpp
