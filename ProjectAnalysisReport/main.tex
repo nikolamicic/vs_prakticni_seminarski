@@ -67,11 +67,11 @@
 \abstract{
 Ovaj rad će sadržati detaljan opis analize projekta sa spiskom naredbi i alata koji su korišćene i zaključcima koji su napravljeni.
 
-Projekat nad kojim će biti primenjeni alati se nalazi na github adresi: https://gitlab.com/matf-bg-ac-rs/course-rs/projects-2021-2022/22-Panzerkrieg
+Projekat nad kojim će biti primenjeni alati se nalazi na github adresi: https://github.com/eminfedar/widgetci
 
-Autori ovog projekta su moje kolege Jovan Marković (69/2018), Tamara Miković (82/2017), Sara Stanković (57/2018), Tina Mladenović (116/2018), Miodrag Todorović (100/2018) i projekat je rađen u okviru kursa Razvoj softvera na osnovnim studijama Matematičkog fakulteta, smer informatika.
+Autor ovog projekta je Emin Fedar (github username: eminfedar).
 
-Primena alata će biti izvršena na master grani, nad komitom čiji je hash code sledeći: 9eb938b8d4c4fc2ecd2c22c9cae26c964d5371d8
+Primena alata će biti izvršena na master grani, nad komitom čiji je hash code sledeći: 05588c036cd4c6d6eddd5b595d027968ac484140
 }
 
 
@@ -88,6 +88,10 @@ Spisak alata za verifikaciju koji su primenjeni nad projektom su:
 \end{enumerate}
 
 \subsection{Clang-tidy i Clazy}
+Clang-tidy pruža dijagnostiku i ispravke za tipične programske greške, kao što su kršenje stila ili zloupotreba interfejsa.
+
+Clazy pomaže Clang-u da razume Qt semantiku. Prikazuje upozorenja kompajlera vezana za Qt, u rasponu od nepotrebne alokacije memorije do zloupotrebe API-ja i pruža akcije refaktorisanja za rešavanje nekih problema.
+
 Clang-tidy i Clazy su alati koji su pokrenuti preko QtCreator-a.
 Alat je pokrenut preko Debug moda i sastoji se iz narednih koraka koji se mogu videti na slikama ispod.
 
@@ -124,11 +128,16 @@ Ceo izlaz pozvanih alata se može naći u okviru repozitorijuma za analizu datog
 \end{figure}
 
 \subsection{Cppcheck}
+Cppcheck je alat za statičku analizu za C/C++ kod. Pruža jedinstvenu analizu koda za otkrivanje grešaka i fokusira se na otkrivanje nedefinisanog ponašanja i opasnih konstrukcija kodiranja. Cilj je imati vrlo malo lažnih pozitivnih rezultata. Cppcheck je dizajniran da može da analizira vaš C/C++ kod čak i ako ima nestandardnu sintaksu (uobičajeno u ugrađenim projektima).
+
 Cppcheck je alat koji sam pokretao preko terminala. Za instalaciju alata na macOS-u sam koristio komandu \textit{brew install cppcheck}.
 
-Alat predstavlja statičku analizu koda i proverava sve .cpp fajlove na prosleđenoj putanji i vraća uočene greške i upozorenja.
+Alat proverava sve .cpp fajlove na prosleđenoj putanji i vraća uočene greške i upozorenja.
 
 Pozivanje komande i deo rezultata je izgledao kao na slici ispod.
+
+Greška koja je otkrivena na slici \ref{fig: cppcheck-0} je pronađena u fajlu widgetci/wqmlsystem.cpp na liniji 78 i predstavlja pronađenu funkciju koja je non-void tipa, a ipak ne sadrži povratnu vrednost.
+
 Celokupan izlaz pozivanja alata se može naći u okviru repozitorijuma za analizu datog projekta, u okviru foldera Cppcheck.
 
 \begin{figure}[h!]
@@ -140,6 +149,9 @@ Celokupan izlaz pozivanja alata se može naći u okviru repozitorijuma za analiz
 \end{figure}
 
 \subsection{GCov}
+
+GCov je alat za analizu pokrivenosti izvornog koda i alat za profilisanje izraz-po-izraz. Gcov generiše tačne brojeve koliko puta je svaki izraz u programu izvršen. Gcov dolazi kao standardni uslužni program sa GNU Compiler Collection (GCC) paketom.
+
 Primena alata GCov je urađena iz sledećih koraka.
 Prvo su u \textit{Widgetci.pro} fajlu dodata dva flega:
 
@@ -148,7 +160,6 @@ Prvo su u \textit{Widgetci.pro} fajlu dodata dva flega:
     \item \texttt{QMAKE\_LFLAGS += --coverage}
 \end{itemsize}
 
-\newpage
 Izgradnja projekta sa novim flagovima je generisala naredne fajlove, među kojima su i dodatno generisani fajlovi koji imaju ekstenziju '.gcno' i '.gcda'. Svi fajlovi se mogu videti na slici 
 \ref{fig: GCov-00}
 
@@ -276,7 +287,7 @@ Rezultat analize prikazan kroz Flame Graph, za sekciju alokacija memorije izgled
 \begin{center}
 \includegraphics[scale=0.30]{qml-prof-07.png}
 \end{center}
-\caption{Flame Graph - Memory}
+\caption{Flame Graph - Allocations}
 \label{fig: qml-07}
 \end{figure}
 
@@ -286,9 +297,12 @@ Na kraju se može videti statistički prikaz analize nad svim komponentama ove a
 \begin{center}
 \includegraphics[scale=0.30]{qml-prof-08.png}
 \end{center}
-\caption{Flame Graph - Memory}
+\caption{Statistics}
 \label{fig: qml-08}
 \end{figure}
 
+Na osnovu ovih dijagrama možemo videti performanse aplikacije tokom izvršavanja i zahvaljujući njima odrediti koji delovi koda troše najviše vremena i memorije i na osnovu toga ih optimizovati.
+
+U okviru rezultata ovog alata nad analiziranim projektom nisam primetio problem sa performansama tokom izvršavanja aplikacije.
 
 \end{document}
