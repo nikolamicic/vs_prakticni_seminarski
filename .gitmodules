@@ -1,0 +1,4 @@
+[submodule "widgetci"]
+	path = widgetci
+	url = https://github.com/eminfedar/widgetci.git
+	branch = master
